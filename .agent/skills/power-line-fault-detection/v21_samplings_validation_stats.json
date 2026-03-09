@@ -1,0 +1,785 @@
+{
+  "total_samples": 317,
+  "total_correct": 214,
+  "total_wrong": 103,
+  "overall_accuracy": 67.51,
+  "type_stats": {
+    "未知": {
+      "total": 2,
+      "correct": 0,
+      "wrong": 2,
+      "accuracy": 0.0,
+      "avg_confidence": 1.0
+    },
+    "跳闸": {
+      "total": 108,
+      "correct": 83,
+      "wrong": 25,
+      "accuracy": 76.85,
+      "avg_confidence": 0.923
+    },
+    "合闸成功": {
+      "total": 68,
+      "correct": 46,
+      "wrong": 22,
+      "accuracy": 67.65,
+      "avg_confidence": 0.847
+    },
+    "骤降": {
+      "total": 18,
+      "correct": 1,
+      "wrong": 17,
+      "accuracy": 5.56,
+      "avg_confidence": 0.839
+    },
+    "电流骤升": {
+      "total": 28,
+      "correct": 28,
+      "wrong": 0,
+      "accuracy": 100.0,
+      "avg_confidence": 1.0
+    },
+    "上电": {
+      "total": 30,
+      "correct": 20,
+      "wrong": 10,
+      "accuracy": 66.67,
+      "avg_confidence": 0.92
+    },
+    "合闸失败": {
+      "total": 32,
+      "correct": 15,
+      "wrong": 17,
+      "accuracy": 46.88,
+      "avg_confidence": 0.806
+    },
+    "扰动": {
+      "total": 31,
+      "correct": 21,
+      "wrong": 10,
+      "accuracy": 67.74,
+      "avg_confidence": 0.629
+    }
+  },
+  "confusion_matrix": {
+    "未知": {
+      "电流骤升": 2,
+      "上电": 0,
+      "停电/骤降": 0,
+      "合闸失败": 0,
+      "合闸成功": 0,
+      "扰动": 0,
+      "未知": 0,
+      "跳闸": 0,
+      "骤降": 0
+    },
+    "跳闸": {
+      "跳闸": 83,
+      "电流骤升": 3,
+      "扰动": 9,
+      "合闸失败": 6,
+      "停电/骤降": 7,
+      "上电": 0,
+      "合闸成功": 0,
+      "未知": 0,
+      "骤降": 0
+    },
+    "合闸成功": {
+      "跳闸": 1,
+      "合闸失败": 2,
+      "合闸成功": 46,
+      "上电": 12,
+      "电流骤升": 7,
+      "停电/骤降": 0,
+      "扰动": 0,
+      "未知": 0,
+      "骤降": 0
+    },
+    "骤降": {
+      "停电/骤降": 1,
+      "电流骤升": 2,
+      "扰动": 12,
+      "跳闸": 3,
+      "上电": 0,
+      "合闸失败": 0,
+      "合闸成功": 0,
+      "未知": 0,
+      "骤降": 0
+    },
+    "电流骤升": {
+      "电流骤升": 28,
+      "上电": 0,
+      "停电/骤降": 0,
+      "合闸失败": 0,
+      "合闸成功": 0,
+      "扰动": 0,
+      "未知": 0,
+      "跳闸": 0,
+      "骤降": 0
+    },
+    "上电": {
+      "上电": 20,
+      "合闸成功": 10,
+      "停电/骤降": 0,
+      "合闸失败": 0,
+      "扰动": 0,
+      "未知": 0,
+      "电流骤升": 0,
+      "跳闸": 0,
+      "骤降": 0
+    },
+    "合闸失败": {
+      "合闸失败": 15,
+      "上电": 2,
+      "电流骤升": 4,
+      "合闸成功": 7,
+      "跳闸": 4,
+      "停电/骤降": 0,
+      "扰动": 0,
+      "未知": 0,
+      "骤降": 0
+    },
+    "扰动": {
+      "扰动": 21,
+      "跳闸": 1,
+      "电流骤升": 8,
+      "合闸失败": 1,
+      "上电": 0,
+      "停电/骤降": 0,
+      "合闸成功": 0,
+      "未知": 0,
+      "骤降": 0
+    },
+    "停电/骤降": {
+      "上电": 0,
+      "停电/骤降": 0,
+      "合闸失败": 0,
+      "合闸成功": 0,
+      "扰动": 0,
+      "未知": 0,
+      "电流骤升": 0,
+      "跳闸": 0,
+      "骤降": 0
+    }
+  },
+  "wrong_samples": [
+    {
+      "filename": "C0072019060300243_2026-02-25 16_07_58.csv",
+      "true_label": "未知",
+      "predicted_type": "电流骤升",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0072019060300243_2026-02-26 07_49_09.csv",
+      "true_label": "未知",
+      "predicted_type": "电流骤升",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322019031900372_2025-07-03 17_04_51-雷马二线-合闸成功.csv",
+      "true_label": "合闸成功",
+      "predicted_type": "跳闸",
+      "confidence": 0.7
+    },
+    {
+      "filename": "C0322019031900382_2025-07-03 17_04_51-雷马二线-合闸成功.csv",
+      "true_label": "合闸成功",
+      "predicted_type": "合闸失败",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322019031900383_2025-07-03 17_04_51-雷马二线-合闸成功.csv",
+      "true_label": "合闸成功",
+      "predicted_type": "合闸失败",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322020010200461_2025-04-12 11_55_09-淑滨线-电流骤降.csv",
+      "true_label": "骤降",
+      "predicted_type": "电流骤升",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322020010200462_2025-04-12 11_53_40-淑滨线-电流骤降.csv",
+      "true_label": "骤降",
+      "predicted_type": "扰动",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322020010200463_2025-04-12 11_53_40-淑滨线-电流骤降.csv",
+      "true_label": "骤降",
+      "predicted_type": "扰动",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322020010200463_2025-04-12 15_48_51-淑滨线-电流骤降.csv",
+      "true_label": "骤降",
+      "predicted_type": "电流骤升",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322020010200491_2025-04-12 11_53_40-淑滨线-电流骤降.csv",
+      "true_label": "骤降",
+      "predicted_type": "扰动",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322020010200493_2025-04-12 11_53_40-淑滨线-电流骤降.csv",
+      "true_label": "骤降",
+      "predicted_type": "扰动",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322021000000403_2025-08-31 19_31_27-桥鞍线-停电.csv",
+      "true_label": "骤降",
+      "predicted_type": "跳闸",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322021000000423_2025-08-31 19_31_27-桥鞍线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "电流骤升",
+      "confidence": 0.8999999999999999
+    },
+    {
+      "filename": "C0322021000000691_2025-05-21 00_20_57-110kV蓬中1949线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "扰动",
+      "confidence": 0.0
+    },
+    {
+      "filename": "C0322021000000761_2025-05-21 00_20_57-110kV蓬中1949线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "扰动",
+      "confidence": 0.0
+    },
+    {
+      "filename": "C0322021000000763_2026-01-23 07_21_17-110kV蓬中1949线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "电流骤升",
+      "confidence": 0.8999999999999999
+    },
+    {
+      "filename": "C0322022000001601_2025-05-26 11_51_21-110kV金交线-停电.csv",
+      "true_label": "骤降",
+      "predicted_type": "扰动",
+      "confidence": 0.7
+    },
+    {
+      "filename": "C0322022000001611_2025-05-26 11_51_21-110kV金交线-停电.csv",
+      "true_label": "骤降",
+      "predicted_type": "扰动",
+      "confidence": 0.7
+    },
+    {
+      "filename": "C0322022000001612_2025-05-26 11_51_21-110kV金交线-停电.csv",
+      "true_label": "骤降",
+      "predicted_type": "扰动",
+      "confidence": 0.7
+    },
+    {
+      "filename": "C0322022000001613_2025-05-26 11_51_21-110kV金交线-停电.csv",
+      "true_label": "骤降",
+      "predicted_type": "扰动",
+      "confidence": 0.7
+    },
+    {
+      "filename": "C0322022000002011_2023-04-11 10_52_29-220kV新六二线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "扰动",
+      "confidence": 0.0
+    },
+    {
+      "filename": "C0322022000002012_2023-04-11 10_42_15-220kV新六二线-上电.csv",
+      "true_label": "上电",
+      "predicted_type": "合闸成功",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322022000002012_2023-04-11 10_52_31-220kV新六二线-上电.csv",
+      "true_label": "上电",
+      "predicted_type": "合闸成功",
+      "confidence": 0.7
+    },
+    {
+      "filename": "C0322022000002013_2023-04-11 10_42_15-220kV新六二线-上电.csv",
+      "true_label": "上电",
+      "predicted_type": "合闸成功",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322022000002013_2023-04-11 10_52_31-220kV新六二线-上电.csv",
+      "true_label": "上电",
+      "predicted_type": "合闸成功",
+      "confidence": 0.9000000000000001
+    },
+    {
+      "filename": "C0322022000002021_2023-04-11 10_42_15-220kV新六二线-上电.csv",
+      "true_label": "上电",
+      "predicted_type": "合闸成功",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322022000002021_2023-04-11 10_52_29-220kV新六二线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "扰动",
+      "confidence": 0.0
+    },
+    {
+      "filename": "C0322022000002021_2023-04-11 10_52_31-220kV新六二线-上电.csv",
+      "true_label": "上电",
+      "predicted_type": "合闸成功",
+      "confidence": 0.5
+    },
+    {
+      "filename": "C0322022000002023_2023-04-11 10_42_15-220kV新六二线-上电.csv",
+      "true_label": "上电",
+      "predicted_type": "合闸成功",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322022000002133_2025-06-19 00_13_08220kV新六一线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "扰动",
+      "confidence": 0.0
+    },
+    {
+      "filename": "C0322022000002143_2025-06-19 00_13_07220kV新六一线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "电流骤升",
+      "confidence": 0.8999999999999999
+    },
+    {
+      "filename": "C0322023040000281_2025-11-30 09_52_37-110kV云田线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "扰动",
+      "confidence": 0.0
+    },
+    {
+      "filename": "C0322023050000301_2025-06-05 13_21_44-35kV长船319-合闸成功..csv",
+      "true_label": "合闸成功",
+      "predicted_type": "上电",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322023050000302_2025-06-05 13_21_44-35kV长船319-合闸成功..csv",
+      "true_label": "合闸成功",
+      "predicted_type": "上电",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322023050000321_2025-07-01 04_22_49-110kV长庆1V127-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "合闸失败",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322023050000321_2025-07-01 04_22_50-110kV长庆1V127-合闸失败.csv",
+      "true_label": "合闸失败",
+      "predicted_type": "上电",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322023050000341_2025-06-05 13_21_44-35kV长船319-合闸成功..csv",
+      "true_label": "合闸成功",
+      "predicted_type": "上电",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322023050000343_2025-06-05 13_21_44-35kV长船319-合闸成功..csv",
+      "true_label": "合闸成功",
+      "predicted_type": "上电",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322023050000371_2025-06-05 13_21_44-35kV长船319-合闸成功..csv",
+      "true_label": "合闸成功",
+      "predicted_type": "上电",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322023050000413_2025-06-05 13_21_44-35kV长船319-合闸成功..csv",
+      "true_label": "合闸成功",
+      "predicted_type": "上电",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322023050000432_2025-06-05 13_21_44-35kV长船319-合闸成功.csv",
+      "true_label": "合闸成功",
+      "predicted_type": "上电",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322023050000461_2025-04-24 12_05_27-35kV堡滧219-停电.csv",
+      "true_label": "骤降",
+      "predicted_type": "跳闸",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322023050000461_2025-04-24 12_05_30-35kV堡滧219-停电.csv",
+      "true_label": "骤降",
+      "predicted_type": "扰动",
+      "confidence": 0.5
+    },
+    {
+      "filename": "C0322023050000463_2025-04-24 12_05_27-35kV堡滧219-停电.csv",
+      "true_label": "骤降",
+      "predicted_type": "跳闸",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322023050000463_2025-04-24 12_05_30-35kV堡滧219-停电.csv",
+      "true_label": "骤降",
+      "predicted_type": "扰动",
+      "confidence": 0.5
+    },
+    {
+      "filename": "C0322023070000863_2025-08-12 16_28_08-1000kV黄江Ⅰ线-扰动.csv",
+      "true_label": "扰动",
+      "predicted_type": "跳闸",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322023070000902_2025-08-12 16_28_09-1000kV黄江Ⅰ线-合闸成功.csv",
+      "true_label": "合闸成功",
+      "predicted_type": "电流骤升",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322023070000903_2025-09-10 17_48_10-1000kV黄江Ⅰ线-合闸成功.csv",
+      "true_label": "合闸成功",
+      "predicted_type": "电流骤升",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322023070000963_2025-09-10 17_48_10-1000kV黄江Ⅰ线-合闸成功.csv",
+      "true_label": "合闸成功",
+      "predicted_type": "电流骤升",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322023070000973_2025-09-10 17_48_09-1000kV黄江Ⅰ线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "扰动",
+      "confidence": 0.5
+    },
+    {
+      "filename": "C0322023070000973_2025-09-10 17_48_10-1000kV黄江Ⅰ线-合闸成功.csv",
+      "true_label": "合闸成功",
+      "predicted_type": "电流骤升",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C032202308000008F_2025-07-26 22_27_29-冯不线-上电.csv",
+      "true_label": "上电",
+      "predicted_type": "合闸成功",
+      "confidence": 0.5
+    },
+    {
+      "filename": "C032202308000008F_2025-07-26 22_27_55-冯不线-上电.csv",
+      "true_label": "上电",
+      "predicted_type": "合闸成功",
+      "confidence": 0.5
+    },
+    {
+      "filename": "C032202308000014F_2025-07-26 22_27_28-冯不线-电流骤降.csv",
+      "true_label": "骤降",
+      "predicted_type": "扰动",
+      "confidence": 0.7
+    },
+    {
+      "filename": "C032202308000014F_2025-07-26 22_27_54-冯不线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "停电/骤降",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C032202308000014F_2025-07-26 22_27_55-冯不线-上电.csv",
+      "true_label": "上电",
+      "predicted_type": "合闸成功",
+      "confidence": 0.5
+    },
+    {
+      "filename": "C0322023090001113_2024-05-10 13_11_25-侯岛二线-合闸失败.csv",
+      "true_label": "合闸失败",
+      "predicted_type": "电流骤升",
+      "confidence": 0.8999999999999999
+    },
+    {
+      "filename": "C0322023090001113_2024-05-10 13_11_26-侯岛二线-合闸失败.csv",
+      "true_label": "合闸失败",
+      "predicted_type": "合闸成功",
+      "confidence": 0.30000000000000004
+    },
+    {
+      "filename": "C0322023090001131_2024-05-10 13_11_26-侯岛二线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "停电/骤降",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322023090001133_2024-05-10 13_11_25-侯岛二线-合闸失败.csv",
+      "true_label": "合闸失败",
+      "predicted_type": "合闸成功",
+      "confidence": 0.30000000000000004
+    },
+    {
+      "filename": "C0322023090001133_2024-05-10 13_11_26-侯岛二线-合闸失败.csv",
+      "true_label": "合闸失败",
+      "predicted_type": "合闸成功",
+      "confidence": 0.30000000000000004
+    },
+    {
+      "filename": "C032202403000048F_2024-06-06 18_22_41--青岛一二线-合闸失败.csv",
+      "true_label": "合闸失败",
+      "predicted_type": "电流骤升",
+      "confidence": 0.8999999999999999
+    },
+    {
+      "filename": "C032202403000048F_2024-06-27 18_25_06-青岛一二线-扰动.csv",
+      "true_label": "扰动",
+      "predicted_type": "电流骤升",
+      "confidence": 0.8999999999999999
+    },
+    {
+      "filename": "C032202403000049F_2024-03-31 13_25_53-青岛一二线-合闸成功.csv",
+      "true_label": "合闸成功",
+      "predicted_type": "电流骤升",
+      "confidence": 0.8999999999999999
+    },
+    {
+      "filename": "C032202403000049F_2024-03-31 13_25_53-青岛一二线-电流骤降.csv",
+      "true_label": "骤降",
+      "predicted_type": "扰动",
+      "confidence": 0.6000000000000001
+    },
+    {
+      "filename": "C032202403000049F_2024-03-31 13_25_54-青岛一二线-合闸成功.csv",
+      "true_label": "合闸成功",
+      "predicted_type": "电流骤升",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C032202403000049F_2024-06-27 18_25_06-青岛一二线-扰动.csv",
+      "true_label": "扰动",
+      "predicted_type": "电流骤升",
+      "confidence": 0.8999999999999999
+    },
+    {
+      "filename": "C032202403000051F_2024-06-06 18_22_41-青岛一二线-扰动.csv",
+      "true_label": "扰动",
+      "predicted_type": "电流骤升",
+      "confidence": 0.8999999999999999
+    },
+    {
+      "filename": "C032202403000051F_2024-06-06 18_22_41_-青岛一二线-扰动.csv",
+      "true_label": "扰动",
+      "predicted_type": "电流骤升",
+      "confidence": 0.8999999999999999
+    },
+    {
+      "filename": "C032202403000052F_2024-06-06 18_22_41-青岛一二线-合闸失败.csv",
+      "true_label": "合闸失败",
+      "predicted_type": "电流骤升",
+      "confidence": 0.8999999999999999
+    },
+    {
+      "filename": "C032202405000088F_2025-04-12 10_09_21-110kV庙清一线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "合闸失败",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C032202405000089F_2025-04-12 10_09_21_110kV庙清一线-合闸失败.csv",
+      "true_label": "合闸失败",
+      "predicted_type": "跳闸",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C032202405000089F_2025-04-12 10_09_23-110kV庙清一线-合闸失败.csv",
+      "true_label": "合闸失败",
+      "predicted_type": "跳闸",
+      "confidence": 0.7
+    },
+    {
+      "filename": "C032202405000089F_2025-04-12 10_54_23-110kV庙清一线-合闸失败.csv",
+      "true_label": "合闸失败",
+      "predicted_type": "合闸成功",
+      "confidence": 0.30000000000000004
+    },
+    {
+      "filename": "C032202405000089F_2025-04-12 10_54_23_-110kV庙清一线-合闸失败.csv",
+      "true_label": "合闸失败",
+      "predicted_type": "合闸成功",
+      "confidence": 0.30000000000000004
+    },
+    {
+      "filename": "C032202405000089F_2025-04-12 11_40_21-110kV庙清一线-合闸失败.csv",
+      "true_label": "合闸失败",
+      "predicted_type": "合闸成功",
+      "confidence": 0.30000000000000004
+    },
+    {
+      "filename": "C0322024060001853_2025-06-24 12_47_29-220kV牡亚线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "停电/骤降",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322024060001863_2025-06-24 12_47_29-220kV牡亚线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "停电/骤降",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322024060001881_2025-06-24 12_47_29-220kV牡亚线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "停电/骤降",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C032202410000149F_2025-09-14 13_37_04--崇东534线城南支线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "扰动",
+      "confidence": 0.5
+    },
+    {
+      "filename": "C032202410000149F_2025-09-14 13_37_07-2-崇东534线城南支线-合闸失败.csv",
+      "true_label": "合闸失败",
+      "predicted_type": "上电",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C032202410000149F_2025-09-14 13_37_07-崇东534线城南支线-合闸失败.csv",
+      "true_label": "合闸失败",
+      "predicted_type": "跳闸",
+      "confidence": 0.7
+    },
+    {
+      "filename": "C032202410000150F_2025-09-04 02_28_21-2-220kV水盖线-合闸失败.csv",
+      "true_label": "合闸失败",
+      "predicted_type": "合闸成功",
+      "confidence": 0.30000000000000004
+    },
+    {
+      "filename": "C032202410000150F_2025-09-04 02_28_21-220kV水盖线-合闸失败.csv",
+      "true_label": "合闸失败",
+      "predicted_type": "电流骤升",
+      "confidence": 0.8999999999999999
+    },
+    {
+      "filename": "C032202410000150F_2025-09-04 02_28_21-220kV水盖线-扰动.csv",
+      "true_label": "扰动",
+      "predicted_type": "合闸失败",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C032202410000150F_2025-09-05 06_08_22-2-220kV水盖线-合闸成功.csv",
+      "true_label": "合闸成功",
+      "predicted_type": "电流骤升",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C032202410000151F_2025-09-05 06_08_22-2-220kV水盖线-扰动.csv",
+      "true_label": "扰动",
+      "predicted_type": "电流骤升",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C032202410000151F_2025-09-05 06_08_22-220kV水盖线-扰动.csv",
+      "true_label": "扰动",
+      "predicted_type": "电流骤升",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C032202411000152F_2025-09-05 06_08_22-2-220kV水盖线-扰动.csv",
+      "true_label": "扰动",
+      "predicted_type": "电流骤升",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C032202411000152F_2025-09-05 06_08_22-220kV水盖线-扰动.csv",
+      "true_label": "扰动",
+      "predicted_type": "电流骤升",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322025020003051_2025-08-24 04_09_47-35kV青天3560-合闸成功.csv",
+      "true_label": "合闸成功",
+      "predicted_type": "上电",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322025020003052_2025-08-24 04_09_47-35kV青天3560-合闸成功.csv",
+      "true_label": "合闸成功",
+      "predicted_type": "上电",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322025020003053_2025-08-24 04_09_47-35kV青天3560-合闸成功.csv",
+      "true_label": "合闸成功",
+      "predicted_type": "上电",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322025020003062_2025-08-24 04_09_47-2-35kV青天3560-合闸成功.csv",
+      "true_label": "合闸成功",
+      "predicted_type": "上电",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322025020003062_2025-08-24 04_09_47-35kV青天3560-合闸成功.csv",
+      "true_label": "合闸成功",
+      "predicted_type": "上电",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322025090003881_2025-09-24 20_04_33-35kV集电六线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "合闸失败",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322025090003902_2025-09-24 20_04_33-35kV集电六线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "停电/骤降",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322025090003921_2025-09-24 20_04_33-35kV集电六线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "合闸失败",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322025090003922_2025-09-24 20_04_33-35kV集电六线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "合闸失败",
+      "confidence": 1.0
+    },
+    {
+      "filename": "C0322025110004392_2025-12-17 16_33_52-110kV泉季明线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "扰动",
+      "confidence": 0.0
+    },
+    {
+      "filename": "LN100202302000024_2025-07-30 11_40_30-110kV升媒线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "停电/骤降",
+      "confidence": 1.0
+    },
+    {
+      "filename": "LN100202302000036_2025-07-30 11_40_30-110kV升媒线-跳闸.csv",
+      "true_label": "跳闸",
+      "predicted_type": "合闸失败",
+      "confidence": 1.0
+    },
+    {
+      "filename": "LN100202302000036_2025-07-30 11_40_32-110kV升媒线-合闸失败.csv",
+      "true_label": "合闸失败",
+      "predicted_type": "跳闸",
+      "confidence": 0.7
+    }
+  ]
+}

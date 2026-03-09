@@ -1,0 +1,99 @@
+{
+  "total_samples": 317,
+  "total_correct": 228,
+  "total_wrong": 89,
+  "overall_accuracy": 0.7192429022082019,
+  "type_stats": {
+    "25 16_07_58": {
+      "total": 1,
+      "correct": 0,
+      "wrong": 1,
+      "accuracy": 0.0,
+      "avg_confidence": 1.0
+    },
+    "26 07_49_09": {
+      "total": 1,
+      "correct": 0,
+      "wrong": 1,
+      "accuracy": 0.0,
+      "avg_confidence": 1.0
+    },
+    "跳闸": {
+      "total": 108,
+      "correct": 97,
+      "wrong": 11,
+      "accuracy": 0.8981481481481481,
+      "avg_confidence": 0.9490740740740741
+    },
+    "合闸成功": {
+      "total": 56,
+      "correct": 40,
+      "wrong": 16,
+      "accuracy": 0.7142857142857143,
+      "avg_confidence": 0.8232142857142858
+    },
+    "停电": {
+      "total": 10,
+      "correct": 0,
+      "wrong": 10,
+      "accuracy": 0.0,
+      "avg_confidence": 0.7
+    },
+    "电流骤降": {
+      "total": 8,
+      "correct": 0,
+      "wrong": 8,
+      "accuracy": 0.0,
+      "avg_confidence": 0.9125
+    },
+    "电流骤增": {
+      "total": 3,
+      "correct": 0,
+      "wrong": 3,
+      "accuracy": 0.0,
+      "avg_confidence": 1.0
+    },
+    "上电": {
+      "total": 30,
+      "correct": 20,
+      "wrong": 10,
+      "accuracy": 0.6666666666666665,
+      "avg_confidence": 0.92
+    },
+    "电流骤升": {
+      "total": 25,
+      "correct": 25,
+      "wrong": 0,
+      "accuracy": 1.0,
+      "avg_confidence": 1.0
+    },
+    "合闸失败": {
+      "total": 32,
+      "correct": 26,
+      "wrong": 6,
+      "accuracy": 0.8125,
+      "avg_confidence": 0.996875
+    },
+    "扰动": {
+      "total": 31,
+      "correct": 20,
+      "wrong": 11,
+      "accuracy": 0.6451612903225806,
+      "avg_confidence": 0.6645161290322581
+    },
+    "合闸成功.": {
+      "total": 6,
+      "correct": 0,
+      "wrong": 6,
+      "accuracy": 0.0,
+      "avg_confidence": 1.0
+    },
+    "重合闸成功": {
+      "total": 6,
+      "correct": 0,
+      "wrong": 6,
+      "accuracy": 0.0,
+      "avg_confidence": 0.9
+    }
+  }
+}
